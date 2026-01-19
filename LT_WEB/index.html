@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đề thi CSS</title>
+
+    <style>
+        /* ===== RESET CƠ BẢN ===== */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ===== CÂU 1 ===== */
+        .title {
+            color: blue;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* ===== CÂU 2 ===== */
+        .box {
+            width: 300px;
+            height: 150px;
+            background-color: #fff3b0;
+            border: 2px solid black;
+            border-radius: 12px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 150px;
+            font-weight: bold;
+        }
+
+        /* ===== CÂU 3 ===== */
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 25px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: red;
+        }
+
+        /* ===== CÂU 4 ===== */
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #333;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .menu li {
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu li:hover {
+            color: yellow;
+        }
+
+        /* ===== CÂU 5 ===== */
+        header,
+        footer {
+            height: 60px;
+            background-color: #444;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            margin-top: 10px;
+        }
+
+        .content {
+            display: flex;
+            height: 200px;
+        }
+
+        .left,
+        .main,
+        .right {
+            flex: 1;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CÂU 1 -->
+    <div class="title">Lập trình Web cơ bản</div>
+
+    <!-- CÂU 2 -->
+    <div class="box">Hộp nội dung CSS</div>
+
+    <!-- CÂU 3 -->
+    <button class="btn">Đăng ký</button>
+
+    <!-- CÂU 4 -->
+    <ul class="menu">
+        <li>Trang chủ</li>
+        <li>Sản phẩm</li>
+        <li>Liên hệ</li>
+    </ul>
+
+    <!-- CÂU 5 -->
+    <header>HEADER</header>
+
+    <div class="content">
+        <div class="left">LEFT</div>
+        <div class="main">MAIN</div>
+        <div class="right">RIGHT</div>
+    </div>
+
+    <footer>FOOTER</footer>
+
+</body>
+
+</html>
